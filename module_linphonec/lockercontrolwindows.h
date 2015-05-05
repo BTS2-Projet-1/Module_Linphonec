@@ -2,6 +2,7 @@
 #define LOCKERCONTROLWINDOWS_H
 
 #include <QMainWindow>
+#include <QProcess>
 
 namespace Ui {
 class LockerControlWindows;
@@ -17,6 +18,7 @@ public:
 
 private:
     Ui::LockerControlWindows *ui;
+    QProcess *m_linphonec;
 };
 
 #endif // LOCKERCONTROLWINDOWS_H
