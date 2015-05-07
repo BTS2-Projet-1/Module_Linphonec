@@ -20,6 +20,7 @@ private:
     Ui::LockerControlWindows *ui;
     QProcess *m_linphonec;
     //créer objet tube?
+
 };
 
 #endif // LOCKERCONTROLWINDOWS_H
