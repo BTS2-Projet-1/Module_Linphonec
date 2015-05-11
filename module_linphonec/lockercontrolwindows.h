@@ -19,7 +19,6 @@ public:
 private:
     Ui::LockerControlWindows *ui;
     QProcess *m_linphonec;
-    //créer objet tube?
 
 };
 

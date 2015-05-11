@@ -17,8 +17,8 @@
    <widget class="QPushButton" name="pushButton">
     <property name="geometry">
      <rect>
-      <x>40</x>
-      <y>40</y>
+      <x>20</x>
+      <y>20</y>
       <width>99</width>
       <height>23</height>
      </rect>
@@ -32,12 +32,12 @@
      <rect>
       <x>10</x>
       <y>0</y>
-      <width>91</width>
+      <width>151</width>
       <height>21</height>
      </rect>
     </property>
     <property name="text">
-     <string>simu_linphonec</string>
+     <string>simulation_linphonec</string>
     </property>
    </widget>
   </widget>

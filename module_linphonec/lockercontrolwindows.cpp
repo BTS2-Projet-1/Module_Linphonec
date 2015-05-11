@@ -6,7 +6,8 @@ LockerControlWindows::LockerControlWindows(QWidget *parent) :
     ui(new Ui::LockerControlWindows)
 {
     ui->setupUi(this);
-    m_linphonec = new QProcess();//création d'un nouvel objet de type QProcess
+    //création d'un nouvel objet de type QProcess
+    m_linphonec = new QProcess();
 
     //Démarrage du programme qui simule Linphonec
     m_linphonec->start("/home/tpbts2/ProjetBTS2/module_linphonec/Module_Linphonec/module_linphonec/build-simu_linphonec-Desktop-Debug/simu_linphonec");
@@ -14,9 +15,12 @@ LockerControlWindows::LockerControlWindows(QWidget *parent) :
 
 LockerControlWindows::~LockerControlWindows()
 {
-    m_linphonec->waitForFinished(500); //après fermeture, du programme principal, simu_linphonec se ferme au bout de 1/2 sec
+    //après fermeture du programme principal, simu_linphonec se ferme au bout de 1/2 sec
+    m_linphonec->waitForFinished(500);
     m_linphonec->terminate();
-    delete m_linphonec; //destruction de l'objet simu_linphonec
+
+    //destruction de l'objet simu_linphonec
+    delete m_linphonec;
 
     delete ui;
 }
