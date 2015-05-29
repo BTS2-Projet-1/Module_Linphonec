@@ -8,9 +8,13 @@ LockerControlWindows::LockerControlWindows(QWidget *parent) :
     ui->setupUi(this);
     //création d'un nouvel objet de type QProcess
     m_linphonec = new QProcess();
-
-    //Démarrage du programme qui simule Linphonec
-    m_linphonec->start("/home/tpbts2/ProjetBTS2/module_linphonec/Module_Linphonec/module_linphonec/build-simu_linphonec-Desktop-Debug/simu_linphonec");
+    QStringList arg;
+        arg << "-V";
+    //Démarrage du programme Linphonec
+    m_linphonec->start("/usr/bin/./linphonec",arg);
+   /* QStringList arg;
+    arg << "-V";
+    m_linphonec->execute("./usr/bin/linphonec",arg);*/
 };
 
 LockerControlWindows::~LockerControlWindows()

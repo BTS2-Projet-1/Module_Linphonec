@@ -5,9 +5,9 @@
 #include <QCoreApplication>
 #include <phonon/MediaObject>
 #include <phonon/MediaSource>
-#include<phonon/Path>
-#include<phonon/VideoCaptureDevice>
-#include<phonon/VideoWidget>
+#include <phonon/Path>
+#include <phonon/VideoCaptureDevice>
+#include <phonon/VideoWidget>
 
 namespace Ui {
 class MainWindow;
